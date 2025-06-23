@@ -1,0 +1,109 @@
+# Criando o arquivo HTML da página de login com barra superior incluindo botão "Início"
+
+login_html = """<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Igaraçu Social</title>
+  <style>
+    body {
+      font-family: Tahoma, sans-serif;
+      background-color: #e5e5e5;
+      margin: 0;
+    }
+
+    header {
+      background-color: #4b0082;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    .btn-home {
+      background-color: white;
+      color: #4b0082;
+      padding: 8px 16px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .login-container {
+      background-color: white;
+      max-width: 400px;
+      margin: 60px auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #4b0082;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      width: 100%;
+      background-color: #4b0082;
+      color: white;
+      padding: 12px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #3a006a;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Igaraçu Social</h1>
+    <a href="orkut.html" class="btn-home">Início</a>
+  </header>
+
+  <div class="login-container">
+    <h2>Entrar na Rede</h2>
+    <form action="#" method="POST">
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+
+      <button type="submit">Entrar</button>
+    </form>
+  </div>
+
+</body>
+</html>
+"""
+
+# Salvar o arquivo
+login_path = "/mnt/data/login.html"
+with open(login_path, "w", encoding="utf-8") as f:
+    f.write(login_html)
+
+login_path
