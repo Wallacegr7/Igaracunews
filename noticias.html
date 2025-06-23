@@ -1,45 +1,117 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Notícias - Igaraçu News</title>
   <style>
-    body { font-family: Arial, sans-serif; background: #f9f9f9; margin: 0; padding: 0; }
-    header, footer { background: #0d1b3d; color: white; text-align: center; padding: 20px; }
-    nav { background: #1e2a52; text-align: center; }
-    nav a { display: inline-block; padding: 10px 15px; color: white; text-decoration: none; }
-    nav a:hover { background: #f13c3c; }
-    main { max-width: 900px; margin: 30px auto; padding: 0 20px; }
-    article { background: white; margin-bottom: 20px; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    h2 { color: #0d1b3d; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #0d1b2a;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .noticia {
+      background-color: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-left: 5px solid #e63946;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .noticia h2 {
+      margin-top: 0;
+      color: #1b263b;
+    }
+
+    .noticia .data {
+      font-size: 0.9em;
+      color: #666;
+      margin-bottom: 5px;
+    }
+
+    .noticia .fonte {
+      font-size: 0.9em;
+      color: #888;
+      margin-bottom: 15px;
+    }
+
+    .noticia p {
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0d1b2a;
+      color: white;
+      margin-top: 40px;
+    }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Igaraçu News</h1>
-    <p>Levando a cidade até você</p>
+    <h1>📰 Igaraçu News</h1>
+    <p>Levando a cidade até você — e um pouco de magia também</p>
   </header>
-  <nav>
-    <a href="index.html">Início</a>
-    <a href="noticias.html">Notícias</a>
-    <a href="denuncia.html">Denúncia</a>
-    <a href="rede.html">Rede Social</a>
-    <a href="login.html">Login</a>
-    <a href="contato.html">Contato</a>
-  </nav>
-  <main>
-    <h2>Últimas Notícias</h2>
-    <article>
-      <h3>Evento movimenta a cidade neste fim de semana</h3>
-      <p>A praça central recebeu milhares de moradores para celebrar o aniversário da cidade com shows e barracas de comida.</p>
-    </article>
-    <article>
-      <h3>Nova escola municipal será inaugurada em julho</h3>
-      <p>A unidade contará com 12 salas de aula, biblioteca, laboratório de informática e quadra coberta.</p>
-    </article>
-  </main>
+
+  <div class="container">
+
+    <div class="noticia">
+      <h2>Branca de Neve sofre intoxicação alimentar após comer maçã de origem suspeita</h2>
+      <div class="data">23 de junho de 2025</div>
+      <div class="fonte">Fonte: Conselho de Saúde do Reino Encantado</div>
+      <p>Em estado grave, Branca de Neve foi encontrada inconsciente em uma cabana na floresta após consumir uma maçã supostamente oferecida por uma idosa. Autoridades investigam possível tentativa de envenenamento. A Rainha Má, conhecida por conflitos anteriores com a jovem, é a principal suspeita. Os sete anões prestaram depoimento.</p>
+    </div>
+
+    <div class="noticia">
+      <h2>Cinderela denuncia madrasta por exploração doméstica</h2>
+      <div class="data">23 de junho de 2025</div>
+      <div class="fonte">Fonte: Delegacia Real de Defesa da Cidadania</div>
+      <p>Após anos de silêncio, Cinderela denunciou sua madrasta por trabalho escravo e abuso psicológico. De acordo com o boletim, a jovem era obrigada a limpar a mansão diariamente e impedida de sair. A denúncia gerou protestos da classe servil do reino pedindo justiça para criadas e donzelas.</p>
+    </div>
+
+    <div class="noticia">
+      <h2>João e Maria acusam bruxa por tentativa de canibalismo</h2>
+      <div class="data">22 de junho de 2025</div>
+      <div class="fonte">Fonte: Guarda Florestal do Bosque Sombrio</div>
+      <p>Após escapar de uma armadilha dentro de uma casa feita de doces, os irmãos João e Maria denunciaram uma bruxa por tentativa de canibalismo. A acusada foi encontrada em posse de um forno industrial e um caldeirão. O Ministério da Magia decretou prisão preventiva.</p>
+    </div>
+
+    <div class="noticia">
+      <h2>Lobo Mau é preso por fraude de identidade e reincidência</h2>
+      <div class="data">20 de junho de 2025</div>
+      <div class="fonte">Fonte: Tribunal das Criaturas Fantásticas</div>
+      <p>O Lobo Mau foi novamente detido, desta vez ao tentar se passar por uma senhora idosa para enganar Chapeuzinho Vermelho. Segundo o juiz do caso, o lobo já respondia por dois processos anteriores: um envolvendo três porquinhos e outro por tentativa de arrombamento. A população do Reino Animal pede pena exemplar.</p>
+    </div>
+
+    <div class="noticia">
+      <h2>Rapunzel aciona Justiça por cárcere privado em torre isolada</h2>
+      <div class="data">19 de junho de 2025</div>
+      <div class="fonte">Fonte: Defensoria Pública Mágica</div>
+      <p>Rapunzel entrou com uma ação contra uma feiticeira que a manteve trancada por anos em uma torre sem escadas. A jovem afirma que era impedida de sair e só recebia visitas quando autorizadas. O caso reacende o debate sobre liberdade e controle mágico em propriedades particulares.</p>
+    </div>
+
+  </div>
+
   <footer>
-    &copy; 2025 Igaraçu News
+    © 2025 Igaraçu News. Todos os direitos reservados.
   </footer>
+
 </body>
 </html>
