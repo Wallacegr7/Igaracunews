@@ -1,1 +1,89 @@
-<h1>Contato</h1><p>Informações de contato.</p>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fale Conosco - Igaraçu News</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0d1b2a;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .form-container {
+      background-color: #1b263b;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      width: 100%;
+      max-width: 500px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #e63946;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      background-color: #415a77;
+      color: white;
+    }
+
+    input::placeholder, textarea::placeholder {
+      color: #d9d9d9;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #e63946;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #d62828;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Fale Conosco</h2>
+    <form action="https://formsubmit.co/jornalismoigaracunews@gmail.com" method="POST">
+      <label for="nome">Seu nome:</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+      <label for="email">Seu e-mail:</label>
+      <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem" required></textarea>
+
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://wallacegr7.github.io/Igaracunews/obrigado.html">
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</body>
+</html>
